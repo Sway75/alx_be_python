@@ -2,7 +2,7 @@ task = input("Enter your task: ")
 priority = input("Priority (high/medium/low): ")
 time_bound = input("Is it time-bound? (yes/no): ").lower()
 
-match priority.lower():
+match priority:
     case "high":
         reminder = f"High priority task: {task}"
     case "medium":
